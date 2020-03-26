@@ -1,0 +1,19 @@
+version: '3.3'
+services:
+  web:
+    build: .
+    ports:
+      - "${port}:${port}"
+    stdin_open: true
+    tty: true
+#    depends_on:
+#      - postgres
+    environment:
+      - port=${port}
+      - httpsPort=${httpsPort}
+#      DATABASE_URL: postgres://todoapp@postgres/facetome
+#  postgres:
+#    image: postgres:9.6.2-alpine
+#    environment:
+#      POSTGRES_USER: todoapp
+#      POSTGRES_DB: todos
