@@ -1,5 +1,5 @@
 import {BodyParams, Controller, Get, Patch} from "@tsed/common";
-import {ChatService} from "../services/ChatService";
+import {ChatService} from "../../services/ChatService";
 
 @Controller("/chat")
 export class ChatCtrl {
